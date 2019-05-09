@@ -5,8 +5,8 @@ import re
 
 from redbot.core import commands, checks, Config
 
-API_URL = "https://www.cleverbot.com/getreply"
-IO_API_URL = "https://cleverbot.io/1.0"
+API_URL = "http://www.cleverbot.com/getreply"
+IO_API_URL = "http://cleverbot.io/1.0"
 
 log = logging.getLogger("red.trusty-cogs.Cleverbot")
 listener = getattr(commands.Cog, "listener", None)  # red 3.0 backwards compatibility support
@@ -41,7 +41,7 @@ class OutdatedCredentials(CleverbotError):
 
 
 class Cleverbot(commands.Cog):
-    """Cleverbot rewritten for V3 from https://github.com/Twentysix26/26-Cogs/tree/master/cleverbot"""
+    """Cleverbot rewritten for V3 from htts://github.com/Twentysix26/26-Cogs/tree/master/cleverbot"""
 
     def __init__(self, bot):
         self.bot = bot
